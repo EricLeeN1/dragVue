@@ -4,7 +4,26 @@ const useMainStore = defineStore({
   id: "main",
   state: () => ({
     name: "超级管理员",
-    components: [], // 画布上的组件
+    components: [
+      {
+        id: "1",
+        x: 50,
+        y: 50,
+        width: 100,
+        height: 50,
+        fill: "red",
+        draggable: true,
+      },
+      {
+        id: "2",
+        x: 200,
+        y: 100,
+        width: 100,
+        height: 50,
+        fill: "green",
+        draggable: true,
+      },
+    ], // 画布上的组件
     availableComponents: [
       // 可用的组件列表
       { id: 1, name: "Button", type: "Button", x: 0, y: 0 },
