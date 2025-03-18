@@ -1,11 +1,18 @@
 <template>
-  <el-config-provider :locale="zhCn">123</el-config-provider>
+  <div class="app">
+    <ComponentPanel />
+    <CanvasArea />
+  </div>
 </template>
 
 <script setup lang="ts">
-import zhCn from "element-plus/dist/locale/zh-cn.mjs";
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import ComponentPanel from "./components/ComponentPanel.vue";
+import CanvasArea from "./components/CanvasArea.vue";
 </script>
 
-<style></style>
+<style>
+.app {
+  display: flex;
+  height: 100vh;
+}
+</style>
